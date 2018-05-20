@@ -168,3 +168,7 @@ h2 strong{
     background-image: url("img/banner-fisica-overlay.png");
     background-size: cover;
 }
+
+.main-header .sidebar-toggle:hover{
+    color: #2196F3;
+}
