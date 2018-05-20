@@ -11,7 +11,7 @@ $(function () {
 
     function time(){
         timer.start({callback: function (timer) {
-            if(timer.getTimeValues().seconds % 30 == 0){
+            if(timer.getTimeValues().seconds % 15 == 0){
                 $("#help")[0].src = 'img/help2.png';
                 x.play(); 
             }
