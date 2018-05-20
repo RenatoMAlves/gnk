@@ -52,7 +52,7 @@ $(function () {
             var pontos = $('#pontos').text;
             console.log(pontos);
             console.log($('#pontos').text(parseInt($('#pontos').text()) - 5))
-            console.log($('#exp').text(parseInt($('#exp').text()) - 2))
+            console.log($('#exp').text(parseFloat($('#exp').text()) - 0.2))
             $('#modal-warning').modal('show');
         }
         timer.pause();
