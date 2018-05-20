@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Plank - Play New Knowledge</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="bower_components/morris.js/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="index2.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini">
+          <img src="img/logo-gnk.png" width="35px">
+        </span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg">
+          <img src="img/logo-gnk.png" width="35px">
+        </span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <span class="hidden-xs">Alexander Pierce</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="user-header">
+                  <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                  <p>
+                    Alexander Pierce - Web Developer
+                    <small>Member since Nov. 2012</small>
+                  </p>
+                </li>
+                <!-- Menu Body -->
+                <li class="user-body">
+                  <div class="row">
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Followers</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Sales</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Friends</a>
+                    </div>
+                  </div>
+                  <!-- /.row -->
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+        <section class="sidebar" style="height: auto;">
+            <!-- Sidebar user panel -->
+            
+            <!-- search form -->
+            
+            <!-- /.search form -->
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+          </section>
+          <ul class="sidebar-menu tree" data-widget="tree">
+              <li class="header">SEU MENU</li>
+              <li>
+                <a href="index.html">
+                  <img src="img/task.svg" width="15px">
+                  <span>Tarefas</span>
+                </a>
+              </li>
+              <li>
+                <a href="rank.html">
+                  <img src="img/ranking.svg" width="15px">
+                  <span>Rank</span>
+                </a>
+              </li>
+              <li>
+                  <a href="loja.html">
+                    <img src="img/money-bag.svg" width="15px">
+                    <span>Loja de Itens</span>
+                  </a>
+                </li>
+            </ul>
+          </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-lg-4 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-yellow">
+              <div class="icon">
+                <img src="img/coin.svg" class="p-3" width="55px" style="padding-bottom: 25px;">
+              </div>
+              <div class="inner">
+                <h3 stule>5.000</h3>
+                <p>Plank coins</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-green">
+              <div class="icon">
+                <img src="img/up-arrow.png" class="p-3" width="55px" style="padding-bottom: 25px;">
+              </div>
+              <div class="inner">
+                <h3 stule>88/100 xp</h3>
+                <div class="progress progress-sm active" style="width: 80%;">
+                  <div class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                    <span class="sr-only">29% Complete</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-yellow">
+              <div class="icon">
+                <img src="img/title.svg" class="p-3" width="55px" style="padding-bottom: 25px;">
+              </div>
+              <div class="inner">
+                <h3 id="titulo-sup">...</h3>
+                <p id="sub-titulo">Senhor supremo das Equações</p>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Custom Tabs (Pulled to the right) -->
+            <div class="nav-tabs-custom">
+              <ul class="nav nav-tabs pull-right">
+                <li class="active" id="callbackExample"><a href="#tab_1-1" data-toggle="tab" style="font-size: 35px;" class="values">00:00</a></li>
+                <li class="pull-left header" style="top: 1rem; font-size: 4rem;"><img src="img/coin2.svg" width="50px"> <span id="pontos">50</span></li>
+                <li class="pull-left header" style="top: 1rem; font-size: 4rem; margin-right: 5rem;"><img src="img/up-arrow2.png" width="35px"> <span id="exp">12</span></li>
+                <li class="pull-left header" style="top: 1rem; font-size: 3rem;"> Desafio do grande matemático aristóteles</li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="tab_1-1">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <div class="row">
+                        <div class="col-lg-10">
+                          <h2>Quais os valores de <strong style="color: orange">X</strong> que tornam a <strong style="color: lightgreen">equação</strong> <strong style="color: darkblue">2x² - 3x - 5</strong> verdadeira?</h2>
+                        </div>
+                        <div class="col-lg-2 numero-questao text-center">
+                          1/10
+                        </div>
+                      </div>
+                      <hr class="style15">
+                      <ul class="list-group respostas">
+                        <li class="list-group-item" id="resposta-certa">
+                          <label class="contain">x = 5/2 e x = - 1
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li class="list-group-item">
+                          <label class="contain">x = 2 e x = - 3
+                            <input type="radio"name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li class="list-group-item">
+                          <label class="contain">x = 5/6 e x = 1
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li class="list-group-item">
+                          <label class="contain">x = 3/2 e x = 6
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                        </li>
+                        <li class="list-group-item">
+                          <label class="contain">x = -9 e x = 8
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4" style="border-left: 1px solid lightgrey;">
+                      <img id="help" src="img/help.png" width="100%">
+                    </div>
+                  </div>
+                  <hr/>
+                  <button type="button" class="btn btn-success" id="responder">
+                    Responder
+                  </button>
+                </div>
+              </div>
+              <!-- /.tab-content -->
+            </div>
+            <!-- nav-tabs-custom -->
+          </div>
+          <audio id="myAudio">
+            <source src="audio/Beep15.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <!-- /.row (main row) -->
+
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs">
+        <b>Versão</b> 1.0.0
+      </div>
+      <strong>Copyright &copy; 2018
+        <a href="https://adminlte.io">Plank Developer</a>.</strong> Todos os direitos reservados.
+    </footer>
+
+    <!-- Modal Sucesso -->
+    <div class="modal modal-success fade" id="modal-success" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span></button>
+            <h3 class="modal-title">Parabéns!!! você acertou.</h3>
+          </div>
+          <div class="modal-body">
+            <h4>O que acha de ir para a próxima questão?</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal" data-toggle="modal" data-target="#modal-bonus">Vamos!</button>
+            <!-- <button type="button" class="btn btn-outline">Save changes</button> -->
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+
+    <!-- Modal Prox Pergunta -->
+    <div class="modal modal-info fade" id="modal-info" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span></button>
+            <h3 class="modal-title">Pergunta 2</h3>
+          </div>
+          <div class="modal-body">
+            <h4>Está preparado para esta questão?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Começar!!!</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+  </div>
+
+  <!-- Modal Inicio -->
+  <div class="modal fade" id="modal-inicio" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span></button>
+          <h3 class="modal-title">Ok, Vamos começar com a 1ª pergunta</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Está preparado para começar?</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary pull-left" id="iniciar" data-dismiss="modal">Começar!</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+
+  <!-- Modal Inicio -->
+  <div class="modal modal-info fade" id="modal-bonus" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span></button>
+          <h3 class="modal-title">OOh!! Algo magnífico aconteceu.</h3>
+        </div>
+        <div class="modal-body">
+            <img src="img/title2.svg" width="60px" style="display: inline-flex; margin-right: 10px;">
+            <h4 style="display: inline-flex; width: 80%">Parabéns, você desbloqueou o título de: <br/><strong style="font-size: 110%;">Desbravador de equações desconhecidas</strong></h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info pull-left" id="confirmar-bonus" data-dismiss="modal" data-toggle="modal" data-target="#modal-pergunta-seguinte">Começar!</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+
+  <!-- Modal Inicio -->
+  <div class="modal fade" id="modal-pergunta-seguinte" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span></button>
+          <h3 class="modal-title">Você está indo muito bem</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Vamos começar com a 2ª pergunta? Pronto?</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary pull-left" id="iniciar" data-dismiss="modal">Vamos!</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+
+  <!-- Modal erro da questão -->
+  <div class="modal modal-warning fade" id="modal-warning" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span></button>
+          <h3 class="modal-title">Hum... essa não era a resposta certa.</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Mas não se preocupe, você ainda pode ganhar 40 pontos e 10 de experiência. Vamos tentar de novo?</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline pull-left" id="tentar-de-novo" data-dismiss="modal">Tentar novamente</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+
+  <!-- jQuery 3 -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge('uibutton', $.ui.button);
+  </script>
+  <!-- Bootstrap 3.3.7 -->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Morris.js charts -->
+  <script src="bower_components/raphael/raphael.min.js"></script>
+  <script src="bower_components/morris.js/morris.min.js"></script>
+  <!-- Sparkline -->
+  <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+  <!-- jvectormap -->
+  <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+  <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+  <!-- daterangepicker -->
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <!-- datepicker -->
+  <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <!-- Bootstrap WYSIHTML5 -->
+  <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+  <!-- Slimscroll -->
+  <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <!-- FastClick -->
+  <script src="bower_components/fastclick/lib/fastclick.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="dist/js/pages/dashboard.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+  <script src="js/easytimer.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
